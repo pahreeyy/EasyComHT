@@ -1,16 +1,5 @@
-/*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
-
 body {
-  background: #fff;
+  background: #ffffff;
   color: #444;
   font-family: "Open Sans", sans-serif;
 }
@@ -76,7 +65,7 @@ h6 {
 --------------------------------------------------------------*/
 
 #topbar {
-  background: #59A8A3;
+  background: #040076;
   padding: 10px 0;
   border-bottom: 1px solid #4e948f;
   font-size: 14px;
@@ -88,7 +77,7 @@ h6 {
 }
 
 #topbar .contact-info a:hover {
-  color: #50d8af;
+  color: #ff0101;
 }
 
 #topbar .contact-info i {
@@ -99,7 +88,7 @@ h6 {
 #topbar .contact-info .fa-phone {
   padding-left: 20px;
   margin-left: 20px;
-  border-left: 1px solid #e9e9e9;
+  border-left: 1px solid #ff0101;
 }
 
 #topbar .social-links a {
@@ -111,7 +100,7 @@ h6 {
 }
 
 #topbar .social-links a:hover {
-  color: #50d8af;
+  color: #ff0101;
 }
 
 #topbar .social-links a:first-child {
@@ -127,7 +116,7 @@ h6 {
   height: 84px;
   transition: all 0.5s;
   z-index: 997;
-  background: #4a8c87;
+  background: #040076;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -141,7 +130,7 @@ h6 {
 }
 
 #header #logo h1 a {
-  color: #035F5C;
+  color: #ffffff;
   line-height: 1;
   display: inline-block;
 }
@@ -195,7 +184,7 @@ h6 {
 }
 
 #intro .intro-content h2 {
-  color: #035F5C;
+  color: #555454;
   margin-bottom: 30px;
   font-size: 64px;
   font-weight: 700;
@@ -221,13 +210,13 @@ h6 {
 }
 
 #intro .intro-content .btn-get-started {
-  background: #035F5C;
-  border: 2px solid #035F5C;
+  background: #040076;
+  border: 2px solid #040076;
 }
 
 #intro .intro-content .btn-get-started:hover {
   background: none;
-  color: #035F5C;
+  color: #040076;
 }
 
 #intro .intro-content .btn-projects {
@@ -342,7 +331,7 @@ h6 {
   padding: 10px 8px;
   text-decoration: none;
   display: inline-block;
-  color: #fff;
+  color: #ffffff;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -351,7 +340,7 @@ h6 {
 
 .nav-menu li:hover > a,
 .nav-menu .menu-active > a {
-  color: #50d8af;
+  color: #ffffff;
 }
 
 .nav-menu > li {
@@ -379,7 +368,7 @@ h6 {
 }
 
 .nav-menu ul li:hover > a {
-  color: #50d8af;
+  color: #040076;
 }
 
 .nav-menu ul ul {
@@ -462,11 +451,11 @@ h6 {
 }
 
 #mobile-nav ul .menu-has-children i.fa-chevron-up {
-  color: #50d8af;
+  color: #040076;
 }
 
 #mobile-nav ul .menu-item-active {
-  color: #50d8af;
+  color: #040076;
 }
 
 #mobile-body-overly {
@@ -507,7 +496,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header h2 {
   font-size: 32px;
-  color: #035F5C;
+  color: #040076;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -548,7 +537,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .content h2 {
-  color: #035F5C;
+  color: #040076;
   font-weight: 700;
   font-size: 33px;
   font-family: "Raleway", sans-serif;
@@ -573,7 +562,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .content i {
   font-size: 20px;
   padding-right: 4px;
-  color: #035F5C;
+  color: #040076;
 }
 
 #about .content ul {
@@ -620,8 +609,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #services .box .icon i:before {
-  background: #035F5C;
-  background: linear-gradient(45deg, #035F5C 0%, #08b8b2 100%);
+  background: #040076;
+  background: linear-gradient(45deg, #040076 0%, #040076 100%);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -813,7 +802,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #testimonials .owl-dot.active {
-  background-color: #50d8af;
+  background-color: #040076;
 }
 
 /* Call To Action Section
@@ -854,58 +843,85 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 3px solid #50d8af;
 }
 
-/* Our Team Section
---------------------------------*/
-
-#team {
-  background: #fff;
-  padding: 30px 0 0 0;
-}
-
-#team .member {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#team .member .pic {
+/*--------------------------------------------------------------
+# Team Section
+--------------------------------------------------------------*/
+.team .team-member {
+  background-color: var(--surface-color);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border-radius: 5px;
+}
+
+.team .team-member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .team-member .social {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 40px;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  background: color-mix(in srgb, var(--background-color), transparent 20%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a {
+  transition: color 0.3s;
+  color: var(--heading-color);
+  margin: 0 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team .team-member .social a i {
+  line-height: 0;
+}
+
+.team .team-member .social a:hover {
+  color: var(--accent-color);
+}
+
+.team .team-member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .team-member .member-info {
+  padding: 25px 15px;
   text-align: center;
 }
 
-#team .member .pic img {
-  max-width: 100%;
-}
-
-#team .member .details {
-  background: #50d8af;
-  color: #fff;
-  padding: 15px;
-  border-radius: 0 0 3px 3px;
-}
-
-#team .member h4 {
+.team .team-member .member-info h4 {
   font-weight: 700;
-  margin-bottom: 2px;
+  margin-bottom: 5px;
   font-size: 18px;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
-#team .member span {
-  font-style: italic;
+.team .team-member .member-info span {
   display: block;
   font-size: 13px;
+  font-weight: 400;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-#team .member .social {
-  margin-top: 5px;
+.team .team-member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-#team .member .social a {
-  color: #fff;
-}
-
-#team .member .social i {
-  font-size: 16px;
-  margin: 0 2px;
+.team .team-member:hover .social {
+  opacity: 1;
 }
 
 /* Contact Section
@@ -924,7 +940,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 48px;
   display: inline-block;
   margin-bottom: 10px;
-  color: #035F5C;
+  color: #040076;
 }
 
 #contact .contact-info address,
@@ -946,7 +962,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #contact .contact-info a:hover {
-  color: #50d8af;
+  color: #ff0000;
 }
 
 #contact .contact-address,
